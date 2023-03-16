@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <button
+          id="home-btn"
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+          HOME
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="mt-8 lg:px-9 flex flex-col md:flex-row lg:flex-row">
+        <div
+          class="w-full md:w-[70%] lg:w-[70%] mx-auto gap-4 grid md:grid-cols-2 lg:grid-cols-2 mb-12">
+          <!-- ---------------------------------------------------------------------
+            fist quition 
+        ------------------------------------------------------------------------>
+          <div class="card w-96 bg-base-100 shadow-xl image-full">
+            <figure><img src="images/loop.jpg" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Quistion 1</h2>
+              <p>
+                What Is The Diffrents Between
+                <span class="text-yellow-500 font-bold">
+                  forEach, find, map, & filter
+                </span>
+                in JavaScript
+              </p>
+              <div class="card-actions justify-end">
+                <label for="my-modal-1" class="btn btn-outline btn-warning">
+                  See Answer
+                </label>
+              </div>
+            </div>
+            <input type="checkbox" id="my-modal-1" class="modal-toggle" />
+            <label for="my-modal-1" class="modal cursor-pointer">
+              <label class="modal-box relative" for="">
+                <h3 class="text-lg font-bold">
+                  The Besics Diffrents Between <span class="text-orange-500"> forEach, find, map, & filter</span>
+                </h3>
+                <p class="py-4">
+                  <span class="font-bold">The forEach()</span> Method runs a function once for each element in an array  
+                </p>
+                <p class="py-4">
+                  <span class="font-bold">The find()</span>method returns the first element in an array  that passes a test function  
+                </p>
+                <p class="py-4">
+                  <span class="font-bold">The Map object</span> is used to map keys to values. It stores each element as key-value pair. It operates the elements such as search, update and delete on the basis of specified key.
+                </p>
+                <p class="py-4">
+                  <span class="font-bold">The filter()</span>Method returns a new array with all elements that pass the test defined by the given function. 
+                </p>
+              </label>
+            </label>
+          </div>
+          <!-- ---------------------------------------------------------------------
+            second qution 
+        -------------------------------------------------------------------- -->
+          <div class="card w-96 bg-base-100 shadow-xl image-full">
+            <figure><img src="images/storage-2.jpg" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Quistion 2</h2>
+              <p>
+                What Is The Diffrents Between
+                <span class="text-yellow-500 font-bold">
+                  localStorage, sectionStorage, & cookies
+                </span>
+              </p>
+              <div class="card-actions justify-end">
+                <label for="my-modal-2" class="btn btn-outline btn-warning">
+                  See Answer
+                </label>
+              </div>
+            </div>
+            <input type="checkbox" id="my-modal-2" class="modal-toggle" />
+            <label for="my-modal-2" class="modal cursor-pointer">
+              <label class="modal-box relative" for="">
+                <h3 class="text-lg font-bold">
+                  The Besics Diffrents Between <span class="text-orange-500"> localStorage, sessionStorage, & cookies</span>
+                </h3>
+                <p class="py-4">
+                  <span class="font-bold">The localStorage</span> allows web applications to store data locally within the user's browser with no expiration date. The data will not be deleted when the browser is closed, and will be available when the browser is opened again.  
+                </p>
+                <p class="py-4">
+                  <span class="font-bold">The sessionStorage</span>  allows you to store data in the browser depending on the system memory and the data stored in the browser until the browser is closed. when the browser is closed it will clear all the data stored in session storage.  
+                </p>
+                <p class="py-4">
+                  <span class="font-bold">Cookies</span> is a piece of data that a server sends to a web browser. Then, the web browser stores the HTTP cookie on the user’s computer and sends it back to the same server in the later requests.
+                  An HTTP cookie is also known as a web cookie or browser cookie. And it is commonly called a cookie.
+                </p>
+              </label>
+            </label>
+          </div>
+          <!-----------------------------------------------------------------------
+            third quition 
+        ---------------------------------------------------------------------->
+        <div class="card w-96 bg-base-100 shadow-xl image-full">
+            <figure><img src="images/event.png" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Quistion 3</h2>
+              <p>
+                What Is 
+                <span class="text-yellow-500 font-bold">
+                    Event Loop ?
+                </span>And how it Work 
+              </p>
+              <div class="card-actions justify-end">
+                <label for="my-modal-3" class="btn btn-outline btn-warning">
+                  See Answer
+                </label>
+              </div>
+            </div>
+            <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+            <label for="my-modal-3" class="modal cursor-pointer">
+              <label class="modal-box relative" for="">
+                <h3 class="text-lg font-bold">The  
+                   <span class="text-orange-500">Event Loop</span> And How it works 
+                </h3>
+                <p class="py-4">
+                  <span class="font-bold">The Event loop</span> in JavaScript is a mechanism through which the calls waiting for execution in the callback queue/job queue can be put on the call stack.  
+                </p>
+              </label>
+            </label>
+          </div>
+          <!-- ----------------------------------------------------------------------------
+            fourth quition
+        --------------------------------------------------------------------------------- -->
+          <div class="card w-96 bg-base-100 shadow-xl image-full">
+            <figure><img src="images/funtion.jpg" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Quistion 4</h2>
+              <p>
+                How Does The
+                <span class="text-yellow-500 font-bold">
+                    quizTimer
+                </span>Function Works
+              </p>
+              <div class="card-actions justify-end">
+                <label for="my-modal-4" class="btn btn-outline btn-warning">
+                  See Answer
+                </label>
+              </div>
+            </div>
+            <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+            <label for="my-modal-4" class="modal cursor-pointer">
+              <label class="modal-box relative" for="">
+                <h3 class="text-lg font-bold">The works of
+                   <span class="text-orange-500"> quizTimer</span> Function 
+                </h3>
+                <p class="py-4">The Function named
+                  <span class="font-bold">quizTimer</span> takes one perameter which is called "dismiss" and it checks the perameter is ture or false. If the perameter is true then the function will clear the timer by calling another funtion named "clearInterval" and stop running   
+                </p>
+              </label>
+            </label>
+          </div>
+          <!---------------------------------------------------------------
+            fifth quistion 
+        ---------------------------------------------------------- -->
+        <div class="card w-96 bg-base-100 shadow-xl image-full">
+            <figure><img src="images/funtion-2.png" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Quistion 5</h2>
+              <p>
+                How Does The
+                <span class="text-yellow-500 font-bold">
+                    chooseQuiz
+                </span>Function Works
+              </p>
+              <div class="card-actions justify-end">
+                <label for="my-modal-5" class="btn btn-outline btn-warning">
+                  See Answer
+                </label>
+              </div>
+            </div>
+            <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+            <label for="my-modal-5" class="modal cursor-pointer">
+              <label class="modal-box relative" for="">
+                <h3 class="text-lg font-bold">The works of
+                   <span class="text-orange-500"> chooseQuiz</span> Function 
+                </h3>
+                <p class="py-4">The Function named
+                  <span class="font-bold">chooseQuiz</span> takes two parameters: "index" and "givenAns". It looks for the corresponding quiz question in an array called answers. If it finds the question, it updates the user's answer. If it doesn't find the question, it adds a new object containing the question and the user's answer to the answers array.
+                  Finally, it shows the updated answers to the user on the screen.
+                </p>
+              </label>
+            </label>
+          </div>
+          <!-----------------------
+             quistion cars end  
+            -------------------->
+        </div>
+      </section>
+    </main>
+
+    <!-- lint to main page  -->
+    <script>
+      document
+        .getElementById("home-btn")
+        .addEventListener("click", function () {
+          window.location.href = "index.html";
+        });
+    </script>
+  </body>
+</html>
